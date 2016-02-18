@@ -55,7 +55,8 @@ static void main_window_load(Window *window)
   layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
 }
 
-static void main_window_unload(Window *window) {
+static void main_window_unload(Window *window) 
+{
   text_layer_destroy(s_time_layer);
 }
 
