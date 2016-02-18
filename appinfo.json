@@ -1,0 +1,25 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Radian",
+    "enableMultiJS": false,
+    "longName": "X the Y be with you",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "X the Y be with you",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "6e63ef7c-6709-4463-93ba-cfc2a550fd26",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
