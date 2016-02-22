@@ -21,16 +21,16 @@ static void update_date()
   switch(tick_time->tm_mday % 10)
   {
     case 1:
-      strftime(s_buffer, sizeof(s_buffer), "%B the %dst be with you.", tick_time);
+      strftime(s_buffer, sizeof(s_buffer), "%B the %dst be with you", tick_time);
       break;
     case 2:
-      strftime(s_buffer, sizeof(s_buffer), "%B the %dnd be with you.", tick_time);
+      strftime(s_buffer, sizeof(s_buffer), "%B the %dnd be with you", tick_time);
       break;
     case 3:
-      strftime(s_buffer, sizeof(s_buffer), "%B the %drd be with you.", tick_time);
+      strftime(s_buffer, sizeof(s_buffer), "%B the %drd be with you", tick_time);
       break;
     default:
-      strftime(s_buffer, sizeof(s_buffer), "%B the %dth be with you.", tick_time);
+      strftime(s_buffer, sizeof(s_buffer), "%B the %dth be with you", tick_time);
   }
   text_layer_set_text(s_time_layer, s_buffer);
 }
@@ -48,7 +48,7 @@ static void main_window_load(Window *window)
       GRect(0, PBL_IF_ROUND_ELSE(58, 52), bounds.size.w, 50));
   text_layer_set_background_color(s_time_layer, GColorClear);
   text_layer_set_text_color(s_time_layer, GColorWhite);
-  text_layer_set_text(s_time_layer, "September the 04th be with you.");
+  text_layer_set_text(s_time_layer, "September the 04th be with you");
   // system font list: https://github.com/pebble-examples/app-font-browser/blob/master/src/app_font_browser.c
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_ROBOTO_CONDENSED_21)); 
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
